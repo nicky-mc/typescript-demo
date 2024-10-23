@@ -89,7 +89,7 @@ export default function Home() {
                 <p>
                   A project utilising nextjs and supabase to create blog posts
                   allowing comments using CRUD operations as well as including
-                  things i enjoy adn utilising as many of the skills learnt so
+                  things I enjoy and utilising as many of the skills learnt so
                   far during my Bootcamp with Tech Educators UK in Norwich..
                 </p>
                 <div className="card-actions justify-end">
@@ -114,7 +114,7 @@ export default function Home() {
               <div className="card-body">
                 <h2 className="card-title">Nicky&apos;s Space</h2>
                 <p>
-                  A personal blog where where i have utilied react and express
+                  A personal blog where where i have utilised react and express
                   to allow for posting blogs and comments
                 </p>
                 <div className="card-actions justify-end">

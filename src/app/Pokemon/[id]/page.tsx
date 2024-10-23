@@ -1,5 +1,6 @@
 // app/Pokemon/[id]/page.tsx
 import React from "react";
+import Image from "next/image";
 
 const Pokemon = async ({ params }: { params: { id: string } }) => {
   const response = await fetch(
@@ -20,9 +21,11 @@ const Pokemon = async ({ params }: { params: { id: string } }) => {
 
       {/* Pokémon Image */}
       <div className="flex justify-center">
-        <img
+        <Image
           src={pokemon.sprites.front_default}
           alt={pokemon.name}
+          width={150}
+          height={150}
           className="my-4"
         />
       </div>

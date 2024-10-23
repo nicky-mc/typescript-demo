@@ -38,7 +38,7 @@ const PokemonPage = async ({ searchParams }: PokemonPageProps) => {
   const { search = "", type = "" } = searchParams;
 
   // Fetch all Pokémon
-  let allPokemon = await fetchPokemonList();
+  const allPokemon = await fetchPokemonList();
   let filteredPokemon = allPokemon;
 
   // Apply search filter

@@ -22,10 +22,10 @@ const Pokemon = async ({ params }: { params: { id: string } }) => {
       {/* Pokémon Image */}
       <div className="flex justify-center">
         <Image
-          src={pokemon.sprites.front_default}
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${params.id}.png`}
           alt={pokemon.name}
-          width={150}
-          height={150}
+          width={300}
+          height={300}
           className="my-4"
         />
       </div>

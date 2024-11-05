@@ -91,10 +91,10 @@ const PokemonPage = async ({ searchParams }: PokemonPageProps) => {
                   {pokemon.name}
                 </h2>
                 <Image
-                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`}
+                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
                   alt={pokemon.name}
-                  width={96}
-                  height={96}
+                  width={150}
+                  height={150}
                   className="mx-auto my-2 w-24 h-24 object-contain bg-gray-200 rounded-full border border-gray-300"
                 />
               </div>

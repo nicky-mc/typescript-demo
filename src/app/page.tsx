@@ -152,6 +152,31 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <figure>
+                <Image
+                  src="/week11.png"
+                  alt="Project 4"
+                  width={400}
+                  height={300}
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Week 11 Lessons</h2>
+                <p>
+                  A collection of lessons put to dynamic use including
+                  useReducer, Object Oriented Programming, and Context.
+                </p>
+                <div className="card-actions justify-end">
+                  <a
+                    href="https://week11-lessons-maybe.vercel.app/"
+                    className="btn btn-primary hover:bg-white hover:text-black"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

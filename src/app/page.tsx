@@ -40,6 +40,17 @@ export default function Home() {
           </nav>
         </header>
 
+        {/* New Banner Image */}
+        <div className="flex justify-center my-8">
+          <Image
+            src="/Graduate.png"
+            alt="Graduate Banner"
+            width={1200}
+            height={400}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+
         <main className="flex flex-col items-center justify-center text-center text-white py-20">
           <Image
             className="rounded-full border-4 border-white"

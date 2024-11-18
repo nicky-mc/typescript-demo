@@ -94,7 +94,7 @@ export default function Home() {
                 </p>
                 <div className="card-actions justify-end">
                   <a
-                    href="#"
+                    href="https://the-sparkle-zone.vercel.app/"
                     className="btn btn-primary hover:bg-white hover:text-black"
                   >
                     View Project
@@ -119,7 +119,31 @@ export default function Home() {
                 </p>
                 <div className="card-actions justify-end">
                   <a
-                    href="#"
+                    href="https://nickys-space.onrender.com/"
+                    className="btn btn-primary hover:bg-white hover:text-black"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <figure>
+                <Image
+                  src="/nexus.png"
+                  alt="The Nexus"
+                  width={400}
+                  height={300}
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">The Nexus</h2>
+                <p>
+                  A Nextjs full stack site that serves as a companion for d&d players and dungeon masters a like this one will be ever expanding so watch out for these changes.
+                </p>
+                <div className="card-actions justify-end">
+                  <a
+                    href="https://the-nexus.vercel.app/"
                     className="btn btn-primary hover:bg-white hover:text-black"
                   >
                     View Project
@@ -144,7 +168,7 @@ export default function Home() {
                 </p>
                 <div className="card-actions justify-end">
                   <a
-                    href="#"
+                    href="https://week-6-assignment-9lus.onrender.com/"
                     className="btn btn-primary hover:bg-white hover:text-black"
                   >
                     View Project

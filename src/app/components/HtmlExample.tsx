@@ -3,20 +3,21 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HtmlExample: React.FC = () => {
   const [startTyping, setStartTyping] = useState(false);
+  const [resetKey, setResetKey] = useState(0); // Key to reset the Typewriter
   const ref = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setStartTyping(true);
         } else {
-          setStartTyping(false); // Stop the animation when out of view
+          setStartTyping(false);
+          setResetKey((prev) => prev + 1); // Reset Typewriter when out of view
         }
       },
       { threshold: 0.1 }
     );
-
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
@@ -27,7 +28,66 @@ const HtmlExample: React.FC = () => {
         <code>
           {startTyping && (
             <Typewriter
-              words={[`<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hello, HTML!</title>\n    <style>...\n    </style>\n  </head>\n  <body>\n    <h1>Hello, HTML!</h1>\n    <p>...</p>\n  </body>\n</html>`]}
+              key={resetKey} // Ensures animation resets when re-entering view
+              words={[`<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, HTML!</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        background-color: #2d3748;
+        color: #ec4899;
+        font-size: 2.25rem;
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transition: transform 0.5s, background-color 0.5s, color 0.5s;
+      }
+      h1:hover {
+        transform: scale(1.1);
+        background-color: #ec4899;
+        color: #2d3748;
+      }
+      p {
+        margin-top: 1rem;
+        color: #4a5568;
+      }
+      ul {
+        margin-top: 1rem;
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        color: #4a5568;
+      }
+      button {
+        margin-top: 1rem;
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, HTML!</h1>
+    <p>This is a simple HTML example demonstrating basic HTML structure and styling.</p>
+    <ul>
+      <li>HTML Document Structure</li>
+      <li>Head and Body Sections</li>
+      <li>Basic CSS Styling</li>
+    </ul>
+    <button>Click Me</button>
+  </body>
+</html>`]}
               loop={false}
               cursor
               cursorStyle="_"

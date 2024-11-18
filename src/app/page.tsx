@@ -100,35 +100,35 @@ export default function Home() {
             A Few of the Languages I&apos;ve Used
           </h2>
           <div className="flex flex-col items-center mt-8 space-y-4">
-            <div className="bg-black p-4 rounded-lg text-2xl">
+            <div className="bg-black p-4 rounded-lg text-xl sm:text-2xl">
               <pre>
                 <code>
                   <TypingAnimation text={`// JavaScript Example\nfunction greet() {\n  console.log('Hello, JavaScript!');\n}\n\ngreet();`} />
                 </code>
               </pre>
             </div>
-            <div className="bg-black p-4 rounded-lg text-2xl">
+            <div className="bg-black p-4 rounded-lg text-xl sm:text-2xl">
               <pre>
                 <code>
                   <TypingAnimation text={`<!-- HTML Example -->\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hello, HTML!</title>\n  </head>\n  <body>\n    <h1>Hello, HTML!</h1>\n  </body>\n</html>`} />
                 </code>
               </pre>
             </div>
-            <div className="bg-black p-4 rounded-lg text-2xl">
+            <div className="bg-black p-4 rounded-lg text-xl sm:text-2xl">
               <pre>
                 <code>
                   <TypingAnimation text={`<!-- Tailwind CSS Example -->\n<div className="grid place-items-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-8">\n  <div className="flex flex-col items-center justify-center space-y-4 p-6 bg-white rounded-lg shadow-lg">\n    <h1 className="text-4xl font-bold text-gray-800">Tailwind CSS Example</h1>\n    <p className="text-lg text-gray-600">This is a fancy example using Tailwind CSS, Grid, Flexbox, and DaisyUI features.</p>\n    <button className="btn btn-primary">Primary Button</button>\n    <button className="btn btn-secondary">Secondary Button</button>\n  </div>\n</div>`} />
                 </code>
               </pre>
             </div>
-            <div className="bg-black p-4 rounded-lg text-2xl">
+            <div className="bg-black p-4 rounded-lg text-xl sm:text-2xl">
               <pre>
                 <code>
                   <TypingAnimation text={`// Next.js Example\nimport Head from 'next/head';\n\nfunction HomePage() {\n  return (\n    <Head>\n      <title>My Next.js App</title>\n    </Head>\n  );\n}\n\nexport default HomePage;`} />
                 </code>
               </pre>
             </div>
-            <div className="bg-black p-4 rounded-lg text-2xl">
+            <div className="bg-black p-4 rounded-lg text-xl sm:text-2xl">
               <pre>
                 <code>
                   <TypingAnimation text={`// TypeScript Example\nconst message: string = 'Hello, TypeScript!';\nconsole.log(message);`} />
@@ -321,7 +321,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="py-4 text-center text-white">
+        <footer class="py-4 text-center text-white">
           <p>&copy; 2024 Nicky Mortoza-Cowles. All rights reserved.</p>
         </footer>
       </div>

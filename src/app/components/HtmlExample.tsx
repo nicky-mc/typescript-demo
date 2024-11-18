@@ -18,7 +18,9 @@ const HTMLExample: React.FC = () => {
         </code>
       </pre>
       <div className="bg-gray-100 p-4 rounded-lg mt-4">
-        <h1 className="text-gray-800">Hello, HTML!</h1>
+        <h1 className="bg-gray-800 text-pink-400 text-4xl font-bold p-4 rounded-lg shadow-lg transform transition duration-500 hover:scale-110 hover:bg-pink-400 hover:text-gray-800">
+          Hello, HTML!
+        </h1>
       </div>
     </div>
   );

@@ -89,33 +89,40 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full max-w-4xl mx-auto">
             <div className="card bg-base-100 shadow-xl h-full">
-              <div className="card-body">
+              <div className="card-body overflow-auto">
                 <h2 className="card-title">JavaScript Example</h2>
                 <JavaScriptExample />
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl h-full">
-              <div className="card-body">
+              <div className="card-body overflow-auto">
                 <h2 className="card-title">HTML Example</h2>
                 <HTMLExample />
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl h-full">
-              <div className="card-body">
-                <h2 className="card-title">Tailwind CSS Example</h2>
-                <TailwindExample />
-              </div>
-            </div>
-            <div className="card bg-base-100 shadow-xl h-full">
-              <div className="card-body">
+              <div className="card-body overflow-auto">
                 <h2 className="card-title">Next.js Example</h2>
                 <NextJSExample />
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl h-full">
-              <div className="card-body">
+              <div className="card-body overflow-auto">
                 <h2 className="card-title">TypeScript Example</h2>
                 <TypeScriptExample />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tailwind-example" className="py-20">
+          <h2 className="text-4xl font-bold text-center text-white">
+            Tailwind CSS Example
+          </h2>
+          <div className="flex justify-center mt-8">
+            <div className="card bg-base-100 shadow-xl w-full max-w-4xl">
+              <div className="card-body overflow-auto">
+                <TailwindExample />
               </div>
             </div>
           </div>

@@ -321,7 +321,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer class="py-4 text-center text-white">
+        <footer className="py-4 text-center text-white">
           <p>&copy; 2024 Nicky Mortoza-Cowles. All rights reserved.</p>
         </footer>
       </div>

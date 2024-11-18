@@ -92,7 +92,7 @@ export default function Home() {
 
         <section id="animations" className="py-20">
           <h2 className="text-4xl font-bold text-center text-white">
-            A Few of the Languages I've Used
+            A Few of the Languages I`&apos;ve Used
           </h2>
           <div className="flex flex-col items-center mt-8 space-y-4">
             <div className="bg-black p-4 rounded-lg text-2xl">

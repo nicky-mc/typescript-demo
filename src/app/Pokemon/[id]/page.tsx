@@ -1,6 +1,6 @@
-// app/Pokemon/[id]/page.tsx
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"; // Import Link for navigation
 
 const Pokemon = async ({ params }: { params: { id: string } }) => {
   const response = await fetch(
@@ -14,6 +14,13 @@ const Pokemon = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="p-6">
+      {/* Back to List Link */}
+      <div className="mb-4">
+        <Link href="/Pokemon">
+          <a className="text-blue-500 underline">← Back to Pokédex</a>
+        </Link>
+      </div>
+
       {/* Pokémon Name */}
       <h1 className="text-4xl font-bold text-center capitalize">
         {capitalize(pokemon.name)}

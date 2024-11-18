@@ -79,7 +79,7 @@ export default function Home() {
           <p className="text-center text-white mt-4 max-w-2xl mx-auto">
             I&apos;m a student web developer with a passion for creating
             beautiful and functional websites. I have experience in various web
-            technologies and love to learn new things.
+            technologies and love to learn new things. Enthusiastic and detail-oriented individual transitioning into the tech industry with hands-on experience from a software development boot camp which I graduated at a high standard. I am eager to bring my technical support background, problem-solving skills, and ability to communicate technical concepts to a new and challenging role in Web Development.
           </p>
         </section>
 
@@ -87,12 +87,37 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-white">
             A Few of the Languages I&apos;ve Used
           </h2>
-          <div className="flex flex-col items-center mt-8 space-y-4 w-full max-w-4xl">
-            <JavaScriptExample />
-            <HTMLExample />
-            <TailwindExample />
-            <NextJSExample />
-            <TypeScriptExample />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full max-w-4xl mx-auto">
+            <div className="card bg-base-100 shadow-xl h-full">
+              <div className="card-body">
+                <h2 className="card-title">JavaScript Example</h2>
+                <JavaScriptExample />
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl h-full">
+              <div className="card-body">
+                <h2 className="card-title">HTML Example</h2>
+                <HTMLExample />
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl h-full">
+              <div className="card-body">
+                <h2 className="card-title">Tailwind CSS Example</h2>
+                <TailwindExample />
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl h-full">
+              <div className="card-body">
+                <h2 className="card-title">Next.js Example</h2>
+                <NextJSExample />
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl h-full">
+              <div className="card-body">
+                <h2 className="card-title">TypeScript Example</h2>
+                <TypeScriptExample />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -281,6 +306,9 @@ export default function Home() {
 
         <footer className="py-4 text-center text-white">
           <p>&copy; 2024 Nicky Mortoza-Cowles. All rights reserved.</p>
+          <a href="#top" className="btn btn-primary mt-4">
+            Return to Top
+          </a>
         </footer>
       </div>
     </>

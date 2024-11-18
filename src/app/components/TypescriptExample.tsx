@@ -6,11 +6,18 @@ const TypeScriptExample: React.FC = () => {
   const [color, setColor] = useState<string>('text-blue-500');
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+    useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => setStartTyping(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartTyping(true);
+        } else {
+          setStartTyping(false); // Stop the animation when out of view
+        }
+      },
       { threshold: 0.1 }
     );
+
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);

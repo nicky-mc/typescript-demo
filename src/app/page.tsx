@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from 'react-simple-typewriter';
 
-const TypingAnimation = ({ text }) => (
+interface TypingAnimationProps {
+  text: string;
+}
+
+const TypingAnimation: React.FC<TypingAnimationProps> = ({ text }) => (
   <Typewriter
     words={[text]}
     loop={false}
@@ -75,7 +79,8 @@ export default function Home() {
           <a
             href="#animations"
             className="btn btn-accent mt-4 hover:bg-white hover:text-black"
-          >Just a few of the languages I use
+          >
+            Just a few of the languages I utilise
           </a>
         </main>
 
@@ -92,7 +97,7 @@ export default function Home() {
 
         <section id="animations" className="py-20">
           <h2 className="text-4xl font-bold text-center text-white">
-            A Few of the Languages I`&apos;ve Used
+            A Few of the Languages I&apos;ve Used
           </h2>
           <div className="flex flex-col items-center mt-8 space-y-4">
             <div className="bg-black p-4 rounded-lg text-2xl">

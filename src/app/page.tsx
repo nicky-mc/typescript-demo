@@ -2,6 +2,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Typewriter } from 'react-simple-typewriter';
+
+const TypingAnimation = ({ text }) => (
+  <Typewriter
+    words={[text]}
+    loop={false}
+    cursor
+    cursorStyle='_'
+    typeSpeed={70}
+    deleteSpeed={50}
+    delaySpeed={2000}
+  />
+);
 
 export default function Home() {
   return (
@@ -59,6 +72,11 @@ export default function Home() {
           >
             Go to Pokemon
           </Link>
+          <a
+            href="#animations"
+            className="btn btn-accent mt-4 hover:bg-white hover:text-black"
+          >Just a few of the languages I use
+          </a>
         </main>
 
         <section id="about" className="py-20">
@@ -70,6 +88,49 @@ export default function Home() {
             beautiful and functional websites. I have experience in various web
             technologies and love to learn new things.
           </p>
+        </section>
+
+        <section id="animations" className="py-20">
+          <h2 className="text-4xl font-bold text-center text-white">
+            A Few of the Languages I've Used
+          </h2>
+          <div className="flex flex-col items-center mt-8 space-y-4">
+            <div className="bg-black p-4 rounded-lg text-2xl">
+              <pre>
+                <code>
+                  <TypingAnimation text={`// JavaScript Example\nfunction greet() {\n  console.log('Hello, JavaScript!');\n}\n\ngreet();`} />
+                </code>
+              </pre>
+            </div>
+            <div className="bg-black p-4 rounded-lg text-2xl">
+              <pre>
+                <code>
+                  <TypingAnimation text={`<!-- HTML Example -->\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hello, HTML!</title>\n  </head>\n  <body>\n    <h1>Hello, HTML!</h1>\n  </body>\n</html>`} />
+                </code>
+              </pre>
+            </div>
+            <div className="bg-black p-4 rounded-lg text-2xl">
+              <pre>
+                <code>
+                  <TypingAnimation text={`<!-- Tailwind CSS Example -->\n<div className="grid place-items-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-8">\n  <div className="flex flex-col items-center justify-center space-y-4 p-6 bg-white rounded-lg shadow-lg">\n    <h1 className="text-4xl font-bold text-gray-800">Tailwind CSS Example</h1>\n    <p className="text-lg text-gray-600">This is a fancy example using Tailwind CSS, Grid, Flexbox, and DaisyUI features.</p>\n    <button className="btn btn-primary">Primary Button</button>\n    <button className="btn btn-secondary">Secondary Button</button>\n  </div>\n</div>`} />
+                </code>
+              </pre>
+            </div>
+            <div className="bg-black p-4 rounded-lg text-2xl">
+              <pre>
+                <code>
+                  <TypingAnimation text={`// Next.js Example\nimport Head from 'next/head';\n\nfunction HomePage() {\n  return (\n    <Head>\n      <title>My Next.js App</title>\n    </Head>\n  );\n}\n\nexport default HomePage;`} />
+                </code>
+              </pre>
+            </div>
+            <div className="bg-black p-4 rounded-lg text-2xl">
+              <pre>
+                <code>
+                  <TypingAnimation text={`// TypeScript Example\nconst message: string = 'Hello, TypeScript!';\nconsole.log(message);`} />
+                </code>
+              </pre>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className="py-20 text-white">
@@ -228,6 +289,29 @@ export default function Home() {
                 />
               </svg>
               <span>Email Me</span>
+            </a>
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href="/cv.pdf"
+              download
+              className="btn btn-secondary flex items-center space-x-2 hover:bg-white hover:text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              <span>Download CV</span>
             </a>
           </div>
         </section>

@@ -6,23 +6,26 @@ const JavaScriptExample: React.FC = () => {
   const [startTyping, setStartTyping] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => setStartTyping(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartTyping(true);
+        } else {
+          setStartTyping(false); // Stop the animation when out of view
+        }
+      },
       { threshold: 0.1 }
     );
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     const fizzBuzz = () => {
       const output: string[] = [];
-      for (let i = 1; i <= 100; i++) {
+      for (let i = 1; i <= 60; i++) {
         if (i % 15 === 0) {
           output.push('FizzBuzz');
         } else if (i % 3 === 0) {

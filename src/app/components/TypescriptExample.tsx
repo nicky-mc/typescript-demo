@@ -1,13 +1,13 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
-const NextJSExample: React.FC = () => {
+const TypeScriptExample: React.FC = () => {
   return (
     <div className="bg-black p-4 rounded-lg text-white font-mono">
       <pre className="whitespace-pre-wrap">
         <code>
           <Typewriter
-            words={[`// Next.js Example\nimport Head from 'next/head';\n\nfunction HomePage() {\n  return (\n    <Head>\n      <title>My Next.js App</title>\n    </Head>\n  );\n}\n\nexport default HomePage;`]}
+            words={[`// TypeScript Example\nconst message: string = 'Hello, TypeScript!';\nconsole.log(message);`]}
             loop={false}
             cursor
             cursorStyle='_'
@@ -21,4 +21,4 @@ const NextJSExample: React.FC = () => {
   );
 };
 
-export default NextJSExample;
+export default TypeScriptExample;

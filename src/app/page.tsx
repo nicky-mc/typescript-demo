@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Nicky&apos;s Portfolio</title>
       </Head>
-      <div className="min-h-screen bg-gradient-to-tr from-slate-100 via-rose-200 to-transparent p-8">
+      <div className="min-h-screen bg-gradient-to-l from-slate-200 via-rose-200 to-transparent p-8">
         <header className="flex justify-between items-center py-4">
           <h1 className="text-4xl font-bold text-white">
             Welcome to my Portfolio

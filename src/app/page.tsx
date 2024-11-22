@@ -84,7 +84,7 @@ export default function Home() {
             height={150}
           />
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-slate-800">
+            <h2 className=""text-4xl md:text-5xl font-bold mt-4 bg-gradient-to-r from-slate-50 via-neutral-300 to-slate-700 bg-clip-text text-transparent">
               Hello, I&apos;m Nicky Mortoza-Cowles
             </h2>
             <p className="text-lg md:text-xl mt-4 text-slate-700 leading-relaxed">
@@ -115,7 +115,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-20">
-          <h2 className="text-4xl font-bold text-center text-slate-800">
+          <h2 className=""text-4xl md:text-5xl font-bold mt-4 bg-gradient-to-r from-slate-50 via-neutral-300 to-slate-700 bg-clip-text text-transparent">
             About Me
           </h2>
           <p className="text-center text-slate-700 mt-4 max-w-2xl mx-auto">

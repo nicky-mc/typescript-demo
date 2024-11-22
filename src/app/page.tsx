@@ -15,12 +15,15 @@ export default function Home() {
         <title>Nicky&apos;s Portfolio</title>
       </Head>
       <div className="min-h-screen bg-gradient-to-l from-slate-200 via-rose-200 to-transparent p-8 text-slate-800">
+        {/* Header Section */}
         <header className="py-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
               <div className="card-body text-center">
-                <h2 className="card-title text-2xl font-bold">About</h2>
-                <p>Learn more about who I am and what I do.</p>
+                <h2 className="card-title text-2xl font-bold bg-gradient-to-l from-slate-700 via-red-200 to-slate-200 bg-clip-text text-transparent">
+                  About
+                </h2>
+                <p className="text-slate-600">Learn more about who I am and what I do.</p>
                 <a
                   href="#about"
                   className="btn btn-accent mt-4 hover:bg-rose-300 hover:text-slate-800"
@@ -31,8 +34,10 @@ export default function Home() {
             </div>
             <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
               <div className="card-body text-center">
-                <h2 className="card-title text-2xl font-bold">Projects</h2>
-                <p>Discover my creative and technical work.</p>
+                <h2 className="card-title text-2xl font-bold bg-gradient-to-l from-slate-700 via-red-200 to-slate-200 bg-clip-text text-transparent">
+                  Projects
+                </h2>
+                <p className="text-slate-600">Discover my creative and technical work.</p>
                 <a
                   href="#projects"
                   className="btn btn-primary mt-4 hover:bg-rose-300 hover:text-slate-800"
@@ -43,8 +48,10 @@ export default function Home() {
             </div>
             <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
               <div className="card-body text-center">
-                <h2 className="card-title text-2xl font-bold">Contact</h2>
-                <p>Get in touch to collaborate or connect.</p>
+                <h2 className="card-title text-2xl font-bold bg-gradient-to-l from-slate-700 via-red-200 to-slate-200 bg-clip-text text-transparent">
+                  Contact
+                </h2>
+                <p className="text-slate-600">Get in touch to collaborate or connect.</p>
                 <a
                   href="#contact"
                   className="btn btn-secondary mt-4 hover:bg-rose-300 hover:text-slate-800"
@@ -63,11 +70,12 @@ export default function Home() {
             alt="Graduate Banner"
             width={1200}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg w-full object-cover max-h-96"
           />
         </div>
 
-        <main className="flex flex-col items-center text-center py-20">
+        {/* Main Section */}
+        <main className="flex flex-col md:flex-row items-center text-center md:text-left py-20 space-y-8 md:space-y-0 md:space-x-12">
           <Image
             className="rounded-full border-4 border-white shadow-lg"
             src="/profile.jpeg"
@@ -75,32 +83,37 @@ export default function Home() {
             width={150}
             height={150}
           />
-          <h2 className="text-5xl font-bold mt-4 text-slate-800">
-            Hello, I&apos;m Nicky Mortoza-Cowles
-          </h2>
-          <p className="text-xl mt-2 text-slate-700">A passionate Web Developer</p>
-          <div className="flex space-x-4 mt-6">
-            <a
-              href="#projects"
-              className="btn btn-primary hover:bg-rose-300 hover:text-slate-800"
-            >
-              View My Work
-            </a>
-            <Link
-              href="/Pokemon"
-              className="btn btn-secondary hover:bg-rose-300 hover:text-slate-800"
-            >
-              Go to Pokémon
-            </Link>
-            <a
-              href="#animations"
-              className="btn btn-accent hover:bg-rose-300 hover:text-slate-800"
-            >
-              Explore My Skills
-            </a>
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-slate-800">
+              Hello, I&apos;m Nicky Mortoza-Cowles
+            </h2>
+            <p className="text-lg md:text-xl mt-4 text-slate-700 leading-relaxed">
+              A passionate Web Developer with experience in modern web technologies and a keen interest in learning and creating.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
+              <a
+                href="#projects"
+                className="btn btn-primary hover:bg-rose-300 hover:text-slate-800"
+              >
+                View My Work
+              </a>
+              <Link
+                href="/Pokemon"
+                className="btn btn-secondary hover:bg-rose-300 hover:text-slate-800"
+              >
+                Go to Pokémon
+              </Link>
+              <a
+                href="#animations"
+                className="btn btn-accent hover:bg-rose-300 hover:text-slate-800"
+              >
+                Explore My Skills
+              </a>
+            </div>
           </div>
         </main>
 
+        {/* About Section */}
         <section id="about" className="py-20">
           <h2 className="text-4xl font-bold text-center text-slate-800">
             About Me

@@ -14,34 +14,50 @@ export default function Home() {
       <Head>
         <title>Nicky&apos;s Portfolio</title>
       </Head>
-      <div className="min-h-screen bg-gradient-to-l from-slate-200 via-rose-200 to-transparent p-8">
-        <header className="flex justify-between items-center py-4">
-          <h1 className="text-4xl font-bold text-white">
-            Welcome to my Portfolio
-          </h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <a href="#about" className="text-white hover:underline">
-                  About
+      <div className="min-h-screen bg-gradient-to-l from-slate-200 via-rose-200 to-transparent p-8 text-slate-800">
+        <header className="py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
+              <div className="card-body text-center">
+                <h2 className="card-title text-2xl font-bold">About</h2>
+                <p>Learn more about who I am and what I do.</p>
+                <a
+                  href="#about"
+                  className="btn btn-accent mt-4 hover:bg-rose-300 hover:text-slate-800"
+                >
+                  Explore
                 </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-white hover:underline">
-                  Projects
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
+              <div className="card-body text-center">
+                <h2 className="card-title text-2xl font-bold">Projects</h2>
+                <p>Discover my creative and technical work.</p>
+                <a
+                  href="#projects"
+                  className="btn btn-primary mt-4 hover:bg-rose-300 hover:text-slate-800"
+                >
+                  View Projects
                 </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-white hover:underline">
-                  Contact
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-xl transition-transform transform hover:scale-105">
+              <div className="card-body text-center">
+                <h2 className="card-title text-2xl font-bold">Contact</h2>
+                <p>Get in touch to collaborate or connect.</p>
+                <a
+                  href="#contact"
+                  className="btn btn-secondary mt-4 hover:bg-rose-300 hover:text-slate-800"
+                >
+                  Reach Out
                 </a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </div>
+          </div>
         </header>
 
-        {/* New Banner Image */}
-        <div className="flex justify-center my-8">
+        {/* Banner Section */}
+        <div className="flex justify-center my-12">
           <Image
             src="/Graduate.png"
             alt="Graduate Banner"
@@ -51,43 +67,45 @@ export default function Home() {
           />
         </div>
 
-        <main className="flex flex-col items-center justify-center text-center text-white py-20">
+        <main className="flex flex-col items-center text-center py-20">
           <Image
-            className="rounded-full border-4 border-white"
+            className="rounded-full border-4 border-white shadow-lg"
             src="/profile.jpeg"
             alt="Profile Picture"
             width={150}
             height={150}
           />
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-5xl font-bold mt-4 text-slate-800">
             Hello, I&apos;m Nicky Mortoza-Cowles
           </h2>
-          <p className="text-xl mt-2">A passionate Web Developer</p>
-          <a
-            href="#projects"
-            className="btn btn-primary mt-6 hover:bg-white hover:text-black"
-          >
-            View My Work
-          </a>
-          <Link
-            href="/Pokemon"
-            className="btn btn-secondary mt-4 hover:bg-white hover:text-black"
-          >
-            Go to Pokemon
-          </Link>
-          <a
-            href="#animations"
-            className="btn btn-accent mt-4 hover:bg-white hover:text-black"
-          >
-            Just a few of the languages I utilise
-          </a>
+          <p className="text-xl mt-2 text-slate-700">A passionate Web Developer</p>
+          <div className="flex space-x-4 mt-6">
+            <a
+              href="#projects"
+              className="btn btn-primary hover:bg-rose-300 hover:text-slate-800"
+            >
+              View My Work
+            </a>
+            <Link
+              href="/Pokemon"
+              className="btn btn-secondary hover:bg-rose-300 hover:text-slate-800"
+            >
+              Go to Pokémon
+            </Link>
+            <a
+              href="#animations"
+              className="btn btn-accent hover:bg-rose-300 hover:text-slate-800"
+            >
+              Explore My Skills
+            </a>
+          </div>
         </main>
 
         <section id="about" className="py-20">
-          <h2 className="text-4xl font-bold text-center text-white">
+          <h2 className="text-4xl font-bold text-center text-slate-800">
             About Me
           </h2>
-          <p className="text-center text-white mt-4 max-w-2xl mx-auto">
+          <p className="text-center text-slate-700 mt-4 max-w-2xl mx-auto">
             I&apos;m a student web developer with a passion for creating
             beautiful and functional websites. I have experience in various web
             technologies and love to learn new things. Enthusiastic and detail-oriented individual transitioning into the tech industry with hands-on experience from a software development boot camp which I graduated at a high standard. I am eager to bring my technical support background, problem-solving skills, and ability to communicate technical concepts to a new and challenging role in Web Development.

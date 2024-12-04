@@ -200,31 +200,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <figure>
-                <Image
-                  src="/space.jpeg"
-                  alt="Project 2"
-                  width={400}
-                  height={300}
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Nicky&apos;s Space</h2>
-                <p>
-                  A personal blog where where i have utilised react and express
-                  to allow for posting blogs and comments
-                </p>
-                <div className="card-actions justify-end">
-                  <a
-                    href="https://nickys-space.onrender.com/"
-                    className="btn btn-primary hover:bg-white hover:text-black"
-                  >
-                    View Project
-                  </a>
-                </div>
-              </div>
-            </div>
+
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <figure>
                 <Image
